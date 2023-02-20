@@ -1,15 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#">What you should already know</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+      </li>
+      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li>
+        <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+      </li>
+      <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+      <li>
+        <a class="nav-link" href="#Global_variables">Global variables</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          JavaScript is a cross-platform, object-oriented scripting language.
+          It is a small and lightweight language</p>
+        <p>
+          JavaScript contains a standard library of objects, such as Array,
+          Date, and Math, and a core set of language elements such as
+          operators, control structures, and statements.</p>
+        <ul>
+          <li>
+            Client-side JavaScript extends the core language by supplying
+            objects to control a browser and its Document Object Model (DOM).
+            For example, client-side extensions allow an application to place
+            elements on an HTML form and respond to user events such as mouse
+            clicks, form input, and page navigation.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="main-section">
+      <header>What you should already know</header>
+      <article>
+        <p>This guide assumes you have the following basic background:</p>
 
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web
+            (WWW).
+          </li>
+          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+          <li>
+            Some programming experience. If you are new to programming, try
+            one of the tutorials linked on the main page about JavaScript.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <article>
+        <p>
+          JavaScript and Java are similar in some ways but fundamentally
+          different in some others. The JavaScript language resembles Java but
+          does not have Java's static typing and strong type checking.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+        To get started with writing JavaScript, open the Scratchpad and write
+        your first "Hello world" JavaScript code:
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+
+        Select the code in the pad and hit Ctrl+R to watch it unfold in your
+        browser!
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>
+        You use variables as symbolic names for values in your application.
+        The names of variables, called identifiers, conform to certain rules.
+      </p>
+
+    </section>
+    <section class="main-section" id="Declaring_variables">
+      <header>Declaring variables</header>
+      <article>
+        You can declare a variable in the ways:
+        <p>
+          With the keyword var. For example, <code>var x = 42.</code> This
+          syntax can be used to declare both local and global variables.
+        </p>
+        <p>
+          By simply assigning it a value. For example,
+          <code>x = 42.</code> This always declares a global variable.
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="Variable_scope">
+      <header>Variable scope</header>
+      <article>
+        <p>
+          When you declare a variable outside of any function, it is called a
+          global variable, because it is available to any other code in the
+          current document.
+        </p>
+
+        <p>
+          JavaScript before ECMAScript 2015 does not have block statement
+          scope; rather, a variable declared within a block is local to the
+          function (or global scope) that the block resides within.
+        </p>
+        <code>if (true) { var x = 5; } console.log(x); // 5</code>
+      </article>
+    </section>
+    <section class="main-section" id="Global_variables">
+      <header>Global variables</header>
+      <article>
+        <p>
+          Global variables are in fact properties of the global object. In web
+          pages the global object is window.
+        </p>
+
+        <p>
+          Consequently, you can access global variables declared in one window
+          or frame from another window or frame by specifying the window or
+          frame name.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>
